@@ -139,7 +139,7 @@ and lower than 6 elements (4, 5, 6, 7, 8 and 9).
 lowerAndGreater :: Int -> [Int] -> String
 lowerAndGreater n list = let (l, g) = go n list in fillTemplate n l g
   where
-    fillTemplate x l g = show x ++ " is greater than " ++ show l ++ " element(s) and lower than " ++ show g ++ " element(s)"
+    fillTemplate x l g = show x ++ " is greater than " ++ show l ++ " elements and lower than " ++ show g ++ " elements"
     go _ [] = (0, 0)
     go y (x : xs) = (lower, greater)
       where
